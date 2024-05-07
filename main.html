@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+
+    <form id="survey-form">
+      <fieldset>
+        <h1 id="title">Informative Survey Form</h1>
+        <p id="description">Please take two minutes to fill out the blank.</p>
+      </fieldset>
+      <fieldset>
+          <label id="name-label">Name<input id="name" type="text" placeholder="Enter your Name" required></label>
+          <label id="email-label">Email<input id="email" type="email" placeholder="Enter your Email" required></label>
+          <label id="number-label">Age <p class="check">(optional)</p><input id="number" type="number" placeholder="Age" min="13" max="80"></label>
+        
+  
+        <label>Which of these roles suits you best?
+          <div class="dropdown">
+            <select id="dropdown">
+              <option>Select Role</option>
+              <option>Student</option>
+              <option>Unemployed</option>
+              <option>Employed</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+            </select>
+          </div>    
+        </label>
+      </fieldset> 
+      
+      <fieldset>
+        <legend>Are you satisfied with the experience?
+          <label><input class="inline" type="radio" name="answer" value="Select" checked> Yes</label>
+          <label><input class="inline" type="radio" name="answer" value="Select"> No</label>
+        </legend>
+      </fieldset>
+      
+      <fieldset>
+        <label>What do you think surveys are? <p class="check">(Check all that apply)</p>
+          <div>
+            <input class="inline" type="checkbox" value="Select">Useful
+          </div>
+          <div>
+            <input class="inline" type="checkbox" value="Select">Interactive
+          </div>
+          <div>
+            <input class="inline" type="checkbox" value="Select">Fun
+          </div>
+          <div>
+            <input class="inline" type="checkbox" value="Select">Waste of time
+          </div>
+          <div>
+            <input class="inline" type="checkbox" value="Select">Great
+          </div>   
+        </label>
+  
+        <label class="comment">Tell us about yourself!
+          <textarea placeholder="Enter your comment here..."></textarea>
+        </label>
+        <input id="submit" class="submit" type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+</body>
+</html>
